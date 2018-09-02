@@ -1,0 +1,9 @@
+I decided for this project to manually tune the parameters. I proceeded like this:
+
+1- Set all the weights to zero
+2- Increase P until the time it took the car to converge towards cte=0 was satisfying. At this point the car oscillates a lot around the ideal position
+3- Increase D until the oscillations are under control
+4- Increase I to reduce the cte when the car is stable.
+
+I naturally had to repeat these steps a number of times in order to get an acceptable result.
+All the tuning was done by moving the car to the side of the road in manual mode before starting the controller. This way I kind of simulated a step response for the system.
